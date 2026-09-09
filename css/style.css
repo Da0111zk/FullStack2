@@ -1,9 +1,11 @@
+/* Paleta general del sitio: fondo beige que da identidad de "bodega/almacenamiento" */
 body{
     font-family: Arial, sans-serif;
     background-color: #beaf9f;
     color: rgb(2, 2, 2);
     margin: 0;
 }
+/* Encabezado en gris claro para contrastar con el beige del body */
  header {
     background-color: #f2f2f2;
     color: rgb(2, 2, 2);
@@ -11,6 +13,13 @@ body{
     text-align: center;
     position: relative;
 }
+/* Ajuste para las imágenes de servicio */
+.service-image {
+    width: 100%;
+    height: auto;
+    max-width: 300px;
+}
+/* Logo posicionado sobre el header, con degradado en los bordes para integrarse con el fondo */
 .logo {
   position: absolute;
   top: 10px;
@@ -19,14 +28,7 @@ body{
   -webkit-mask-image: radial-gradient(circle, black 35%, transparent 100%);
   mask-image: radial-gradient(circle, black 35%, transparent 100%);
 }
-header {
-    background-color: #f2f2f2;
-    color: rgb(2, 2, 2);
-    padding: 20px;
-    text-align: center;
-    position: relative;
-}
-
+/* Menú de navegación en fila horizontal, centrado dentro del header */
 nav ul {
     list-style-type: none;
     padding: 0;
@@ -45,7 +47,7 @@ nav ul li a {
     color: rgb(2, 2, 2);
     font-weight: bold;
 }
-
+/* Rojo de acento al pasar el mouse, para dar feedback visual en los links */
 nav ul li a:hover {
     color: #fa0505;
 }
@@ -64,11 +66,13 @@ main p {
     font-size: 18px;
     line-height: 1.5;
 }
+/* Tabla de servicios centrada y con ancho completo del contenedor */
 main table {
     width: 100%;
     border-collapse: collapse;
     margin: 20px auto 0;
 }
+/* Pie de página fijo al fondo de la ventana */
 footer {
     background-color: #f2f2f2;
     color: rgb(2, 2, 2);
@@ -78,9 +82,28 @@ footer {
     width: 100%;
     bottom: 0;
 }
-
-table, th, td {
-    border: 1px solid #f5f4f4;
+/* Bordes suaves en tono beige, coherentes con el fondo del sitio */
+table{
+    background-color: #f2f2f2;
+    border: 1px solid #d9cfc4;
     padding: 8px;
 }
+/* Encabezado de tabla en café oscuro para dar jerarquía visual */
+th{
+    color: #ffffff;
+    background-color: #4a3f36;
+    border: 1px solid #d9cfc4;
+    padding: 8px;
+} 
+/* Fondo blanco cálido para las celdas, contrasta con el beige del body */
+ td{
+    background-color: #ffffff;
+    border: 1px solid #d9cfc4;
+    padding: 8px;
+} 
+
+tr:hover{
+    color: #fa0505;
+}
+
 
