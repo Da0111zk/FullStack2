@@ -17,17 +17,38 @@
                 <li><a href="contact.html">Contacto</a></li>
                 <li><a href="services.html">Servicios</a></li>
                 <li><a href="quotes.html">Cotiza Aqui</a></li>
-                <li><a href="login.html">Iniciar Sesión</a></li>
-                <li><a href="register.html">Registrarse</a></li>
                 <li><a href="faq.html">Preguntas Frecuentes</a></li>
                 <li><a href="resenas.html">Reseñas</a></li>
             </ul>
         </nav>
+        <div class="auth-buttons">
+            <a href="login.html" class="nav-btn">Iniciar Sesión</a>
+            <a href="register.html" class="nav-btn nav-btn-primary">Registrarse</a>
+        </div>
             <img src="imagen/logo.png" alt="Imagen de Mi Espacio" style="width:120%; height:auto;max-width: 300px" class="logo">
             </header>
             <main>
-            <h2>Registrarse </h2>
-            <p>Por favor, completa el formulario para crear tu cuenta.</p>
+                <h2>Registrarse</h2>
+                <p>Crea tu cuenta para empezar a usar Mi Espacio.</p>
+                <form action="#" method="post" class="auth-form">
+                    <div class="form-group">
+                        <label for="reg-nombre">Nombre completo</label>
+                        <input type="text" id="reg-nombre" name="nombre" placeholder="Tu nombre" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="reg-email">Correo electrónico</label>
+                        <input type="email" id="reg-email" name="email" placeholder="tucorreo@ejemplo.com" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="reg-password">Contraseña</label>
+                        <input type="password" id="reg-password" name="password" placeholder="••••••••" required minlength="6">
+                    </div>
+                    <div class="form-group">
+                        <label for="reg-confirm">Confirmar contraseña</label>
+                        <input type="password" id="reg-confirm" name="confirm_password" placeholder="••••••••" required minlength="6">
+                    </div>
+                    <button type="submit" class="btn-submit">Crear cuenta</button>
+                </form>
             </main>
             <footer> 
                 <p>&copy; 2023 Mi Espacio. Todos los derechos reservados.</p>
