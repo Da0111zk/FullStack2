@@ -1,38 +1,106 @@
 <!DOCTYPE html>
-    <html lang ="es">
-        <head>
-            <meta charset="UTF-8">
-            <meta name="viewport" content="width=device-width, initial-scale=1.0">
-            <title>Mi Espacio</title>
-            <link rel="stylesheet" href="css/style.css">
-        </head>
-        <body>
-            <header>
-            <h1>Bienvenido a Mi Espacio</h1>
-            <p>Nuestro espacio, tu bodega.</p>
-        <nav>
-            <ul>
-                <li><a href="index.html">Inicio</a></li>
-                <li><a href="about.html">Acerca de</a></li>
-                <li><a href="contact.html">Contacto</a></li>
-                <li><a href="services.html">Servicios</a></li>
-                <li><a href="quotes.html">Cotiza Aqui</a></li>
-                <li><a href="faq.html">Preguntas Frecuentes</a></li>
-                <li><a href="resenas.html">Reseñas</a></li>
-            </ul>
-        </nav>
-        <div class="auth-buttons">
-            <a href="login.html" class="nav-btn">Iniciar Sesión</a>
-            <a href="register.html" class="nav-btn nav-btn-primary">Registrarse</a>
-        </div>
-            <img src="imagen/logo.png" alt="Imagen de Mi Espacio" style="width:120%; height:auto;max-width: 300px" class="logo">
-            </header>
-            <main>
-            <h2>Cotización de Servicios</h2>
-            <p>Solicita una cotización personalizada para nuestros servicios.</p>
-            </main>
-            <footer> 
-                <p>&copy; 2023 Mi Espacio. Todos los derechos reservados.</p>
-            </footer>
-        </body>
-    </html>
+
+  <html lang ="es">
+
+    <head>
+
+      <meta charset="UTF-8">
+
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+      <title>Mi Espacio</title>
+
+      <link rel="stylesheet" href="css/style.css">
+
+    </head>
+
+    <body>
+
+      <header>
+
+      <h1>Bienvenido a Mi Espacio</h1>
+
+      <p>Nuestro espacio, tu bodega.</p>
+
+    <nav>
+
+      <ul>
+
+        <li><a href="index.html">Inicio</a></li>
+
+        <li><a href="about.html">Acerca de</a></li>
+
+        <li><a href="contact.html">Contacto</a></li>
+
+        <li><a href="services.html">Servicios</a></li>
+
+        <li><a href="quotes.html">Cotiza Aqui</a></li>
+
+        <li><a href="faq.html">Preguntas Frecuentes</a></li>
+
+        <li><a href="resenas.html">Reseñas</a></li>
+
+      </ul>
+
+    </nav>
+
+    <div class="auth-buttons">
+
+      <a href="login.html" class="nav-btn">Iniciar Sesión</a>
+
+      <a href="register.html" class="nav-btn nav-btn-primary">Registrarse</a>
+
+    </div>
+
+      <img src="imagen/logo.png" alt="Imagen de Mi Espacio" style="width:120%; height:auto;max-width: 300px" class="logo">
+
+      </header>
+
+      <main>
+
+      <h2>Cotización de Servicios</h2>
+
+      <p>Solicita una cotización personalizada para nuestros servicios.</p>
+
+        <form action="#" method="post" class="auth-form">
+
+          <div class="form-group">
+
+            <label for="reg-nombre-cotizacion">Nombre completo</label>
+
+            <input type="text" id="reg-nombre-cotizacion" name="nombre" placeholder="Tu nombre" required>
+
+          </div>
+
+          <div class="form-group">
+
+            <label for="reg-email-cotizacion">Correo electrónico</label>
+
+            <input type="email" id="reg-email-cotizacion" name="email" placeholder="tucorreo@ejemplo.com" required>
+
+          </div>
+
+          <div class="form-group">
+
+            <label for="reg-mensaje">Escriba su mensaje</label>
+
+            <input type="txt" id="reg-password" name="mensaje" placeholder="Escriba su mensaje" required minlength="6">
+
+          </div>
+
+          <button type="submit" class="btn-submit-cotizacion">Solicitar cotizacion</button>
+
+        </form>
+
+      </main>
+
+      <footer>
+
+        <p>&copy; 2023 Mi Espacio. Todos los derechos reservados.</p>
+
+      </footer>
+
+    </body>
+
+  </html>
+

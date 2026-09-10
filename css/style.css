@@ -187,3 +187,10 @@ tr:hover{
 .btn-submit:hover {
     background-color: #fa0505;
 }
+.caja {
+    display: inline-block;
+    padding: 15px;
+    border: 1px solid #d9cfc4;
+    border-radius: 8px;
+    background-color: #ffffff;
+}
