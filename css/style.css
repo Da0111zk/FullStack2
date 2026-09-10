@@ -24,7 +24,7 @@ body{
   position: absolute;
   top: 10px;
   left: 20px;
-  width: 120px;
+  width: 10px;
   -webkit-mask-image: radial-gradient(circle, black 35%, transparent 100%);
   mask-image: radial-gradient(circle, black 35%, transparent 100%);
 }
@@ -193,4 +193,91 @@ tr:hover{
     border: 1px solid #d9cfc4;
     border-radius: 8px;
     background-color: #ffffff;
+}
+
+/* Modifica tu clase .caja para que el texto se alinee correctamente a la izquierda */
+.caja {
+    display: block;             /* Cambia de inline-block a block para que ocupe el ancho adecuado */
+    padding: 20px 25px;
+    border: 1px solid #d9cfc4;
+    border-radius: 8px;
+    background-color: #ffffff;
+    max-width: 900px;           /* Centra el contenedor en la pantalla */
+    margin: 20px auto;
+    text-align: left;           /* Soluciona las viñetas feos y el texto desalineado */
+}
+
+/* Regla para que las listas de la caja queden ordenadas */
+.caja ul {
+    margin: 15px 0 15px 20px;
+    padding-left: 20px;
+}
+
+.caja li {
+    margin-bottom: 8px;
+    line-height: 1.4;
+}
+
+/* Regla para que la imagen no se desborde dentro de la caja */
+.caja img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 20px auto 0 auto;   /* Centra la imagen al final del contenido */
+}
+/* Ajustes para el contenedor de la sección Acerca de */
+.about-section {
+    max-width: 900px;
+    margin: 20px auto;
+    padding: 25px;
+    background-color: #ffffff;
+    border: 1px solid #d9cfc4;
+    border-radius: 8px;
+    text-align: left;
+}
+
+/* Alineación de textos y títulos */
+.center-text {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.main-title {
+    font-size: 28px;
+    color: #4a3f36;
+    margin-bottom: 5px;
+}
+
+.subtitle {
+    font-size: 18px;
+    color: #666;
+    margin-top: 0;
+}
+
+.about-section h2 {
+    font-size: 24px;
+    color: #4a3f36;
+    margin-top: 25px;
+    margin-bottom: 10px;
+}
+
+.about-section p {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #222;
+}
+
+/* Formato para el banner e imagen del equipo */
+.full-width-banner {
+    width: 100%;
+    margin: 20px 0;
+    text-align: center;
+}
+
+.equipo-image {
+    width: 100%;
+    height: auto;
+    border-radius: 6px;
+    border: 1px solid #d9cfc4;
+    display: block;
 }
