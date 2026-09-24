@@ -194,3 +194,11 @@ tr:hover{
     border-radius: 8px;
     background-color: #ffffff;
 }
+
+.faq-answer{
+    display:none;
+}
+
+.faq-item.open .faq-answer{
+    display:block
+}
